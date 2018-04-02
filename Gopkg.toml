@@ -183,6 +183,7 @@
 [[constraint]]
   branch = "acmev2"
   name = "github.com/xenolf/lego"
+  source = "github.com/KnicKnic/lego"
 
 [[constraint]]
   name = "google.golang.org/grpc"

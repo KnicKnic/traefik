@@ -24,8 +24,12 @@
 
 [[projects]]
   name = "github.com/Azure/azure-sdk-for-go"
-  packages = ["arm/dns"]
-  revision = "f7bb4db3ea4c73dc58bd284c38ea644a79324be0"
+  packages = [
+    "services/dns/mgmt/2017-09-01/dns",
+    "version"
+  ]
+  revision = "56332fec5b308fbb6615fa1af6117394cdba186d"
+  version = "v15.0.0"
 
 [[projects]]
   branch = "master"
@@ -45,8 +49,8 @@
     "autorest/date",
     "autorest/to"
   ]
-  revision = "f6be1abbb5abd0517522f850dd785990d373da7e"
-  version = "v9.0.0"
+  revision = "ed4b7f5bf1ec0c9ede1fda2681d96771282f2862"
+  version = "v10.4.0"
 
 [[projects]]
   branch = "master"
@@ -193,6 +197,7 @@
     "service/dynamodb/dynamodbiface",
     "service/ec2",
     "service/ecs",
+    "service/lightsail",
     "service/route53",
     "service/sts"
   ]
@@ -300,8 +305,8 @@
 [[projects]]
   name = "github.com/dgrijalva/jwt-go"
   packages = ["."]
-  revision = "d2709f9f1f31ebcda9651b03077758c1f3a0018c"
-  version = "v3.0.0"
+  revision = "06ea1031745cb8b3dab3f6a236daf2b0aa468b7e"
+  version = "v3.2.0"
 
 [[projects]]
   name = "github.com/dnsimple/dnsimple-go"
@@ -745,7 +750,6 @@
   version = "v1.3.7"
 
 [[projects]]
-  branch = "master"
   name = "github.com/jjcollinge/servicefabric"
   packages = ["."]
   revision = "8eebe170fa1ba25d3dfb928b3f86a7313b13b9fe"
@@ -913,6 +917,12 @@
   name = "github.com/mvdan/xurls"
   packages = ["."]
   revision = "db96455566f05ffe42bd6ac671f05eeb1152b45d"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/namedotcom/go"
+  packages = ["namecom"]
+  revision = "44c1cb60c15ed15dfee83396e33cc10bf989cda4"
 
 [[projects]]
   branch = "master"
@@ -1228,14 +1238,19 @@
     "providers/dns/dnsimple",
     "providers/dns/dnsmadeeasy",
     "providers/dns/dnspod",
+    "providers/dns/duckdns",
     "providers/dns/dyn",
+    "providers/dns/exec",
     "providers/dns/exoscale",
     "providers/dns/gandi",
     "providers/dns/gandiv5",
+    "providers/dns/glesys",
     "providers/dns/godaddy",
     "providers/dns/googlecloud",
+    "providers/dns/lightsail",
     "providers/dns/linode",
     "providers/dns/namecheap",
+    "providers/dns/namedotcom",
     "providers/dns/ns1",
     "providers/dns/otc",
     "providers/dns/ovh",
@@ -1245,7 +1260,8 @@
     "providers/dns/route53",
     "providers/dns/vultr"
   ]
-  revision = "a149e7d6506feb4003da7093cbf818c6b75ed4a4"
+  revision = "0fe11048e0c033bd93823e7f16665367b81739d7"
+  source = "github.com/KnicKnic/lego"
 
 [[projects]]
   branch = "master"
@@ -1644,6 +1660,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "593d67272ac35ca0fa59df7f2ac077a81ea842b3181b00acffa20553bfe6f2e0"
+  inputs-digest = "9e40546e5a3da0e6a7036b2e0f52d7aacaf20ddb3ff36b1e49fdedd29e6d25fa"
   solver-name = "gps-cdcl"
   solver-version = 1
